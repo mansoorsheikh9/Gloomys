@@ -1,0 +1,58 @@
+/* Revolution Slider ---------------------------------------------------------*/
+/*------------------- Font Slider -----------------*/
+/*------------------- End Font Slider -----------------*/
+
+.elementor-widget-slider_revolution{
+	.slider-1{
+		.tp-bullets.bullet-2{
+			@media (max-width:$screen-md-max){
+				top: 103% !important;
+				left: -25px !important;
+			}
+			@media (max-width:$screen-sm-max){
+				top: 106% !important;
+				left: -45px !important;
+			}
+		}
+	}
+	.slider-2{
+		.tp-bullets.bullet-1{
+			@media (max-width:$screen-md-max){
+				left: -50px !important;
+			}
+		}
+	}
+	.slider-4{
+		.tp-bullets.bullet-2{
+			transform: translate(0,0) !important;
+			bottom:90px;
+			top:auto !important;
+			left:32% !important;
+			@media (max-width:$screen-sm-max){
+				bottom:50px;
+				left:18% !important;
+			}
+		}
+	}
+	.slider-6{
+		.tp-bullets.bullet-1{
+			bottom:100px;
+			left:auto !important;
+			right:calc(11% + 5px);
+			@media (max-width:$screen-md-max){
+				right: calc(3% + 2px);
+			}
+		}
+	}
+}
+.button-slider{
+	&:after{
+		display:inline-block;
+		content: "\24";
+		font-family: eleganticons;
+		font-size:20px;
+		line-height:1;
+		position:relative;
+		top:5px;
+	}
+}
