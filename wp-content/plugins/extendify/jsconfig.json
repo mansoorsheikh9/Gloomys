@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@library/*": ["./src/Library/*"],
+            "@onboarding/*": ["./src/Onboarding/*"],
+            "@assist/*": ["./src/Assist/*"]
+        }
+    },
+    "exclude": ["node_modules", "vendor"]
+}
