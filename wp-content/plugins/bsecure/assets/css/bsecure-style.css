@@ -1,0 +1,1491 @@
+@font-face {
+  font-family: 'sf_pro_displayregular';
+  src: url('../fonts/fontsfree-net-sfprodisplay-regular-webfont.woff2') format('woff2'),
+       url('../fonts/fontsfree-net-sfprodisplay-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'sf_pro_textregular';
+  src: url('../fonts/fontsfree-net-sfprotext-regular-webfont.woff2') format('woff2'),
+       url('../fonts/fontsfree-net-sfprotext-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.bsecure-loader-outer {
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: auto;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+
+
+.bsecure-ajax-loader {
+
+      width: 20px;
+
+    height: 20px;
+
+    display: inline-block;
+
+    position: absolute;
+
+    left: 3px;
+
+    top: 7px;
+
+}
+
+.bsecure-ajax-loader:after {
+
+  content: " ";
+
+  display: block;
+
+  width: 24px;
+
+    height: 24px;
+
+    margin: 8px;
+
+    border-radius: 50%;
+
+    border: 2px solid #fff;
+
+  border-color: #fff transparent #fff transparent;
+
+  animation: lds-dual-ring 1.2s linear infinite;
+
+}
+
+@keyframes lds-dual-ring {
+
+  0% {
+
+    transform: rotate(0deg);
+
+  }
+
+  100% {
+
+    transform: rotate(360deg);
+
+  }
+
+}
+
+
+
+img.wc-bsecure-checkout-btn-mini-cart {
+
+
+
+  box-shadow:none !important; 
+
+  background:none !important;
+
+}
+
+
+
+.bsecure-checkout-button:active
+
+{
+
+    outline-color: transparent;
+
+    outline: none;
+
+}
+
+
+
+.bsecure-checkout-button:hover
+
+{
+
+    outline-color: transparent;
+
+    outline: none;
+
+    text-decoration: none;
+    opacity: 1 !important;
+
+}
+
+
+
+.bsecure-popup-overlay 
+
+{
+
+    position: fixed;
+
+    height: 100%;
+
+    width: 100%;
+
+    background: #000;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    z-index: 99999;
+
+    top: 0;
+
+    left: 0;
+
+    text-align: center;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.bsecure-popup-overlay img
+
+{
+
+  max-width:250px;
+
+  -webkit-filter: brightness(0) invert(1);
+
+    filter: brightness(0) invert(1);
+
+}
+
+.bsecure-popup-overlay p
+
+{
+
+  font-style: normal;
+
+    font-weight: normal;
+
+    font-size: 18px;
+
+    line-height: 16px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin: 20px 0 0 0;
+
+    font-weight: bold;
+
+}
+
+.bsecure-popup-overlay a
+
+{
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    font-size: 16px;
+
+    line-height: 16px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin: 20px 0 0 0;
+
+    background: #137bde;
+
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+
+    -moz-border-radius: 10px;
+
+}
+
+
+
+.bsecure-popup-overlay a:hover,
+
+.bsecure-popup-overlay a:focus
+
+{
+
+  outline:0;
+
+}
+
+
+
+
+
+@media (max-width: 991px)
+
+{
+
+  html body.woocommerce-cart.has-mobile-bottom-navbar-single-page .woocommerce-cart-wrapper .wc-proceed-to-checkout
+
+  {
+
+    position:unset !important;
+
+    box-shadow: 0 0 0;
+
+  }
+
+  html body.woocommerce-cart.has-mobile-bottom-navbar-single-page .woocommerce-cart-wrapper .wc-proceed-to-checkout .checkout-button
+
+  {
+
+    position: fixed;
+
+      bottom: 0;
+
+      width: 100%;
+
+      left: 0;
+
+      z-index: 999;
+
+  }
+
+}
+
+
+
+#btn-bsecure-new
+
+{
+
+    display: flex;
+
+    align-items: center;
+
+    display:inline-block;
+
+
+
+}
+
+#btn-bsecure-new img
+
+{
+
+  width: auto !important;
+
+}
+
+
+
+#btn-bsecure-new:focus
+
+{
+
+  outline:0 !important;
+
+}
+
+
+
+
+
+.bsecure-popup-loader {
+
+    position: fixed;
+
+    width: 100%;
+
+    background: #FFFFFF;
+
+    z-index: 9999999;
+
+    top: 0;
+
+    left: 0;
+
+    text-align: center;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    overflow-y: unset !important;
+
+    top: 50%;
+
+    left: 50%;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+}
+
+
+
+.bsecure-popup-loader img {
+
+    max-width: 250px;
+
+    width: 25%;
+
+    margin: auto;
+
+    left: 50%;
+
+    top: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    position: absolute;
+
+}
+
+
+
+.bsecure-popup-handle-loader
+
+{
+
+overflow-y: hidden;
+
+}
+
+
+
+.bsecure-loader-outer img {
+
+  max-width: 300px;
+
+    margin: auto;
+
+}
+
+@media (max-width:480px)
+
+{
+
+.bsecure-loader-outer img
+
+  {
+
+    max-width:100%
+
+  }
+
+}
+.bsecure-checkout-mini-cart-widget .bsecure-loader-outer img {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 10px;
+
+}
+
+.bsecure-loader-outer.bsecure-loader-outer-checkout {
+    text-align: right;
+}
+
+.bsecure-btn-at-checkout {
+
+  width: 40%;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper
+{
+  display:flex;
+  flex-wrap: wrap;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper
+{
+  width: 28%;
+  margin-right: 2%;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper #billing_phone
+{
+  width: 70%;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-container--default .select2-selection--single
+{
+  min-height: 45px;
+  border-radius: 0;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-selection
+{
+    padding: .6180469716em;
+    background-color: #f2f2f2;
+    color: #43454b;
+    border: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 13%);
+    border-radius: 0;
+    min-height: 45px;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow
+{
+  top: 10px;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered
+{
+  padding:0;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-container--default .select2-selection--single:focus
+{
+  outline: 0 none;
+}
+.select2-container--open .select2-results__options li:focus
+{
+  outline: 0 none;
+}
+
+
+
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2
+{
+  width:100% !important;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-container--default .select2-selection--single 
+{
+    min-height: 45px;
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered 
+{
+    padding: 0;
+    line-height: 45px;
+}
+.billing_phone_wrapper .woocommerce-input-wrapper .woocommerce-input-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow 
+{
+    top: 0px;
+    height:45px;
+}
+li.payment_method_bsecures label img
+{
+  margin-left: 0px !important;
+  max-width: 320px;
+  float:none !important;
+  margin: 8px 0 0 0;
+}
+
+
+.bsecure-btn-info-wrap
+{
+  display: flex;
+  align-items: center;
+}
+.bsecure-btn-info-wrap:before
+{
+  /*top:1.8em !important;*/
+  top:unset;
+}
+.bsecure-btn-info-wrap .bsecure-checkout-info-txt
+{
+  float: left;
+  width: 55%;
+}
+.bsecure-btn-info-wrap .bsecure-checkout-button
+{
+  float: right;
+  width: 45%;
+  margin: 0;
+  display: flex;
+}
+.bsecure-btn-info-wrap .bsecure-checkout-button .bsecure-loader-outer img
+{
+  width: 100%;
+}
+
+
+
+
+/*------bSecure Modal-------*/
+
+/* The Modal (background) */
+.bsecure-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.bsecure-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.bsecure-modal-close {
+ /* color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;*/
+}
+
+.bsecure-modal-close:hover,
+.bsecure-modal-close:focus {
+  /*color: #000;
+  text-decoration: none;
+  cursor: pointer;*/
+}
+
+.bsecure-modal-header {
+  /*padding: 2px 16px;*/
+
+}
+
+.bsecure-modal-body 
+{
+  /*padding: 2px 16px;*/
+}
+
+.bsecure-modal-footer {
+  /*padding: 2px 16px;
+  font-family: 'sf_pro_textregular';*/
+}
+.bsecure-modal .bsecure-modal-content
+{
+  max-width: 437px;
+  box-shadow: 0px 10.3255px 8.26042px rgba(0, 64, 255, 0.05), 0px 13.079px 26.158px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding:15px 15px;
+}
+.bsecure-modal .bsecure-modal-content .bsecure-modal-body
+{
+  text-align: center;
+}
+.bsecure-modal .bsecure-modal-content .bsecure-modal-body .modalBigHeading
+{
+  font-family: 'sf_pro_textregular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18.7415px;
+  line-height: 22px;
+  text-align: center;
+  max-width: 290px;
+  color: #000000;
+  margin:0 auto 19px;
+}
+.bsecure-modal .bsecure-modal-content .bsecure-modal-body .qistpay-logo
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 21.52px;
+}
+.bsecure-modal .bsecure-modal-content .bsecure-modal-body .qistpay-logo img:nth-child(2)
+{
+  margin:0 11.3px 0 5.5px;
+  width: 12.38px;
+  height: 12.38px;
+}
+.examplePayBox 
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 21.38px;
+  position: relative;
+}
+.examplePayBox .leftExamplePayBox
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12.4672px;
+  line-height: 88.4%;
+  color: #5F666A;
+  margin-right:6.2px;
+  font-family: 'sf_pro_textregular';
+}
+.examplePayBox .rightExamplePayBox
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12.4672px;
+  line-height: 88.4%;
+  color: #5F666A;
+  margin-left:6.2px;
+  font-family: 'sf_pro_textregular';
+}
+.middleExamplePayBox
+{
+  width: 76px;
+  height: 20px;
+  border: 0.673362px solid #137BDE;
+  box-sizing: border-box;
+  border-radius: 3.36681px;
+  font-family: 'sf_pro_textregular';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.middleExamplePayBox .currencyValue
+{
+  position: absolute;
+  left:5.5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.1004px;
+  line-height: 13px;
+  font-family: 'sf_pro_textregular', Arial;
+}
+.exampleEditIcon
+{
+  position: absolute;
+  right:5.5px;
+}
+.middleExamplePayBox .editablePrice
+{
+  background:transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.1004px;
+  line-height: 13px;
+  font-family: 'sf_pro_textregular', Arial;
+  /* identical to box height, or 133% */
+  box-shadow: 0 0 0;
+  border:0;
+  color: #192631;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding:0 2px 0 22px;
+}
+.middleExamplePayBox .editablePrice:focus
+{
+  outline-color: transparent;
+  outline: 0 none;
+  background: transparent;
+  background-color: transparent;
+}
+.monthlyPayBox
+{
+  border: 0.953691px solid #B9C0C4;
+  box-sizing: border-box;
+  border-radius: 3.2109px;
+  justify-content: center;
+  min-height: 53px;
+  font-family: 'sf_pro_textregular';
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:6px 18px;
+  margin: 0 15px 22px;
+}
+.monthlyPayBox .actualMonthlyAmount
+{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27.0682px;
+  line-height: 88.4%;
+  color: #137BDE;
+  font-family: 'sf_pro_textregular', Arial;
+}
+.monthlyPayBox .byMonthly
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.1008px;
+  line-height: 88.4%;
+  color: #000000;
+  font-family: 'sf_pro_textregular';
+  padding:4px 15px 0 5px;
+}
+.monthlyPayBox .noOfMonth
+{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.2571px;
+  line-height: 88.4%;
+  color: #EBF5FF;
+  font-family: 'sf_pro_textregular';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  max-width: 122px;
+  margin-top: 2px;
+  padding: 4px 7px;
+  background: #137BDE;
+  border-radius: 2.42308px;
+  min-height: 20px;
+}
+/*.monthlyPayBox .noOfMonth span
+{
+  background: #137BDE;
+  border-radius: 2.42308px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7px;
+  height: 20px;
+  width: 100%;
+}*/
+.bSecureBtn
+{
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  justify-content: center;
+}
+.footerQistPayLogoBox
+{
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+.footerQistPayLogoBox span
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8.56517px;
+  line-height: 14px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+  font-family: 'sf_pro_displayregular';
+}
+.footerQistPayLogoBox span:first-child
+{
+  padding-right: 5.5px;
+}
+.footerQistPayLogoBox span:last-child
+{
+  padding-left: 3px;
+}
+.bsecure-qisstpay-wrapper .footerQistPayLogoBox img:nth-child(2)
+{
+  width: 14px;
+}
+.bsecure-qisstpay-wrapper .footerQistPayLogoBox img:nth-child(3)
+{
+  height: 11.7px;
+}
+.bsecure-modal-footer .modalFooterPara
+{
+  max-width: 360px;
+  margin:auto;
+  text-align: center;
+}
+.bsecure-modal-footer .modalFooterPara p
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9.41544px;
+  line-height: 16px;
+  text-align: center;
+  color: #B9C0C4;
+  font-family: 'sf_pro_displayregular';
+  margin-bottom: 0;
+}
+.bsecure-modal-footer .modalFooterPara span a
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.8242px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #137BDE;
+  font-family: 'sf_pro_displayregular';
+}
+.bsecure-modal-footer .modalFooterPara span a:active,
+.bsecure-modal-footer .modalFooterPara span a:focus
+{
+  outline: 0 none !important;
+  box-shadow: 0 0 0 !important;
+}
+.bsecure-modal-footer .modalFooterPara span a:hover
+{
+  text-decoration: none;
+}
+.errorBox .rightExamplePayBox
+{
+  border-color: #FE8083;
+}
+.modalErrorText
+{
+  display: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 100%;
+  color: #FE8083;
+  font-family: 'sf_pro_displayregular';
+  text-align: right;
+  max-width: 242px;
+  margin: 0;
+  position: absolute;
+  bottom: 9px;
+  /*right: 76px;*/
+}
+.errorBox .modalErrorText
+{
+  display: block;
+}
+.bsecure-modal-close
+{
+  cursor: pointer;
+}
+.wc-proceed-to-checkout .bsecure-qisstpay-wrapper 
+{
+  margin:-15px auto 0;
+  text-align: center;
+}
+.woocommerce-checkout-payment .bsecure-qisstpay-wrapper 
+{
+  margin-top: 10px;
+}
+.bsecure-qisstpay-wrapper .firstWrapper
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5.5px;
+}
+.bsecure-qisstpay-wrapper .firstWrapper a:first-child
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11.0776px;
+  line-height: 13px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.02em;
+  color: #137BDE;
+  font-family: 'sf_pro_displayregular';
+  text-decoration: none;
+}
+.bsecure-qisstpay-wrapper .firstWrapper a:first-child .woocommerce-Price-amount bdi
+{
+  font-family: 'sf_pro_displayregular', Arial;
+  padding: 0 2px;
+}
+.bsecure-qisstpay-wrapper .firstWrapper a:last-child
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11.0776px;
+  line-height: 13px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.02em;
+  color: #000;
+  text-decoration: underline;
+  font-family: 'sf_pro_displayregular';
+  margin-left:7px;
+}
+.bsecure-qisstpay-wrapper .firstWrapper a:last-child:hover
+{
+  text-decoration: none;
+}
+.bsecure-qisstpay-wrapper .firstWrapper a:focus
+{
+  outline: 0 none;
+}
+.bsecure-qisstpay-just-select
+{
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.bsecure-qisstpay-just-select img
+{
+  height: 23px;
+}
+.entry-summary .bsecure-qisstpay-wrapper
+{
+  margin: 12px 0 0 0;
+  max-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.entry-summary .bsecure-qisstpay-wrapper .footerQistPayLogoBox span
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9.58668px;
+  line-height: 16px;
+  text-align: center;
+  color: #E72E80;
+}
+.entry-summary .bsecure-qisstpay-wrapper .footerQistPayLogoBox img:nth-child(2)
+{
+  width: 14px;
+}
+.entry-summary .bsecure-qisstpay-wrapper .footerQistPayLogoBox img:nth-child(3)
+{
+  height: 11.7px;
+}
+.bsecure-modal-body .footerQistPayLogoBox span
+{
+  font-size: 14.8922px;
+  line-height: 25px;
+}
+.entry-summary .bsecure-qisstpay-wrapper .footerQistPayLogoBox img:nth-child(2)
+{
+  width: 14px;
+}
+.entry-summary .bsecure-qisstpay-wrapper .footerQistPayLogoBox img:nth-child(3)
+{
+  height: 11.7px;
+}
+.tabBox
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 30px 0;
+}
+.tabBox a
+{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.2265px;
+  line-height: 16px;
+  /* identical to box height */
+  text-align: center;
+  font-family: 'sf_pro_displayregular';
+  /* Secondary / Blackish Blue */
+  color: #192631;
+  padding: 11px 8px;
+  border: 0.673049px solid #137BDE;
+  border-radius: 2.26603px 0 0 2.26603px;
+}
+.tabBox a:active,
+.tabBox a:focus
+{
+  outline: 0 none !important;
+  box-shadow: 0 0 0 !important;
+}
+.tabBox a:last-child
+{
+  padding: 11px 15px;
+  border-radius: 0 2.26603px 2.26603px 0;
+}
+.tabBox a.selectedTab
+{
+  background: #137BDE;
+  color: #fff;
+}
+.bottomBlueBar
+{
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
+  margin-top: 21px;
+}
+.insideBottomBlueBarContainer
+{
+  background: #EBF5FF;
+  padding: 11px 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0 0 7px 7px;
+}
+.insideBottomBlueBarContainer a
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.8242px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: none;
+  color: #137BDE;
+  font-family: 'sf_pro_displayregular';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insideBottomBlueBarContainer a:active,
+.insideBottomBlueBarContainer a:focus
+{
+  outline: 0 none !important;
+  box-shadow: 0 0 0 !important;
+}
+.insideBottomBlueBarContainer .sepratorLine
+{
+  margin: 0 11px;
+}
+.insideBottomBlueBarContainer a img.bsecureSmallArrow
+{
+  margin: 1px 0 0 5px;
+}
+
+.qisstpay-price-text .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
+  margin-right: 2px;
+}
+
+
+
+/*----- Start Tooltip at bSecure image fro Buyer Protection Text ------- */
+
+.bsecure-tooltip {
+  position: relative;
+}
+
+.bsecure-tooltip .tooltiptext 
+{
+  visibility: hidden;
+  width: 265px;
+  background-color: #fff;
+  color: #143656;
+  text-align: left;
+  border-radius: 6px;
+  padding: 7px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -120px;
+  font-size: 13px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.83702px 8.51106px rgba(0, 0, 0, 0.12), 0px 8.51106px 19.8591px rgba(60, 66, 87, 0.08);
+}
+
+.bsecure-tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.bsecure-tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*----- End Tooltip at bSecure image fro Buyer Protection Text ------- */
+.payment_method_bsecures p 
+{
+  font-size: 13px;
+}
+.payment_method_bsecures p img
+{
+  float: none !important;
+  width: 13px;
+  display: inline-block;
+  margin: 0 0px 0 2px !important;
+  position: relative;
+  top: 1px;
+}
+.wc_payment_method.payment_method_bsecures label
+{
+  /*display: flex !important;
+  flex-wrap: wrap;*/
+}
+.bsecure-payment-gateway-title
+{
+  display: flex;
+  width: calc(100% - 12%);
+  flex-wrap: wrap;
+}
+.bsecure-payment-gateway-title .textWithImg
+{
+  width: 100%;
+  display: flex;
+}
+li.payment_method_bsecures label img.bsecure-lock-img
+{
+  margin: 5px 5px 0 0;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 0px;
+}
+
+/**checkout popup css start**/
+.bsecure-modal .completeCheckoutModal
+{
+  left: unset;
+  max-width: 100% !important;
+  width: 100%;
+}
+.completeCheckoutModal .bsecure-modal-header
+{
+  float: right;
+}
+.completeCheckoutLogo
+{
+  text-align: center;
+  margin: 0 auto 15px;
+}
+.completeCheckoutLogo img
+{
+  margin: auto;
+}
+.bsecure-modal .completeCheckoutModal .bsecure-modal-body .modalBigHeading
+{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #137BDE;
+    font-family: 'sf_pro_displayregular';
+    margin-bottom: 17px;
+}
+.bsecure-modal .completeCheckoutModal .examplePayBox .leftExamplePayBox
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.3333px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #192631;
+  font-family: 'sf_pro_textregular';
+  margin: 0;
+  max-width: 100%;
+}
+.bsecure-modal .completeCheckoutModal .bSecureBtnDiv .bsecure-loader-outer img
+{
+  max-width: 100%;
+}
+.bsecure-modal .completeCheckoutModal .bsecure-modal-footer .modalFooterPara
+{
+  max-width: 100%;
+}
+.bsecure-modal .completeCheckoutModal .bsecure-modal-footer .modalFooterPara span a
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.3333px;
+  line-height: 16px;
+  text-align: center;
+  color: #137BDE;
+  margin: 10px 0px 0 0;
+  display: inline-block;
+  font-family: 'sf_pro_textregular';
+  position: relative;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+.bsecure-modal .completeCheckoutModal .bsecure-modal-footer .modalFooterPara span a:after
+{
+  content: '';
+  background: url(../images/down-arrow.png) no-repeat;
+  position: absolute;
+  right: -20px;
+  top: 6px;
+  width: 10px;
+  height: 6px;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar
+{
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer 
+{
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 0;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul
+{
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  overflow-y: auto;
+  margin-bottom: 0;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul::-webkit-scrollbar 
+{
+  width: 5px;
+  border-radius: 6px;
+}
+
+/* Track */
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 6px;
+}
+
+/* Handle */
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul::-webkit-scrollbar-thumb {
+    background: rgba(19, 123, 222, 0.5);
+    width: 1px;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul::-webkit-scrollbar-thumb:hover {
+    background: rgba(19, 123, 222, 0.5);
+    border-radius: 6px;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li
+{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 0;
+  margin: 0 0 14px 0;
+  padding: 0 5px 0 0;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .remove_from_cart_button
+{
+  width: 12px;
+  margin: 11px 0 0 -5px;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .leftMiniCartPrdImg
+{
+  width: 36px;
+  max-width: 36px;
+  border: 1px solid #137BDE;
+  margin: 0 6px 0 6px;
+  height: 36px;
+  filter: drop-shadow(0px 2.26994px 2.26994px rgba(19, 123, 222, 0.15));
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .leftMiniCartPrdImg img
+{
+  max-width: 100%;
+  width: 100%;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .rightMiniCartDetails
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 73%;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .rightMiniCartDetails a
+{
+    text-align: left;
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 11px;
+    color: #192631;
+    font-family: 'sf_pro_textregular';
+    margin-bottom: 5px;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .rightMiniCartDetails .quantity
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8.51227px;
+    line-height: 11px;
+    color: #137BDE;
+    font-family: 'sf_pro_textregular';
+    display: flex;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .rightMiniCartDetails .quantity .qtyLabel span
+{
+  margin: 0 4px 0 0;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .rightMiniCartDetails .quantity .woocommerce-Price-amount
+{
+  margin-left: auto;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .rightMiniCartDetails .quantity .woocommerce-Price-amount
+{
+  font-size: 11.3497px;
+  line-height: 100%;
+}
+.bsecure-modal .completeCheckoutModal .bottomBlueBar .insideBottomBlueBarContainer ul li .rightMiniCartDetails .quantity .woocommerce-Price-amount .woocommerce-Price-currencySymbol
+{
+  font-family: arial;
+  margin: 0 4px 0 0;
+}
+/**checkout popup css end**/
+#bsecure-reminder-modal.bsecure-modal
+{
+    padding-top: 50px;
+    background: transparent;
+    max-width: 242px;
+    left: unset;
+    right: 60px; 
+}
+
+@media (max-width: 480px)
+{
+  .bsecure-btn-info-wrap 
+  {
+    flex-direction: column;
+    padding: 21px 15px;
+  }
+  .bsecure-btn-info-wrap .bsecure-checkout-info-txt 
+  {
+    width: 100%;
+    padding: 5px 0 10px 34px;
+  }
+  .bsecure-btn-info-wrap .bsecure-checkout-button 
+  {
+    float: right;
+    width: 100%;
+    margin: 0;
+    display: flex;
+  }
+  .bsecure-modal .bsecure-modal-content
+  {
+    width: 90%;
+    padding:20px 15px;
+  }
+  .monthlyPayBox
+  {
+    padding:0 7px;
+    margin: 0 0px 22px;
+  }
+  .monthlyPayBox .actualMonthlyAmount 
+  {
+    font-size: 20px;
+  }
+  .monthlyPayBox .byMonthly
+  {
+    font-size: 13px;
+  }
+  .monthlyPayBox .noOfMonth
+  {
+    font-size: 13px;
+  }
+  .modalErrorText
+  {
+    right: unset;
+  }
+
+  .woocommerce-checkout-payment .bsecure-qisstpay-wrapper {
+    float: left;
+  }
+
+  .examplePayBox .leftExamplePayBox
+  {
+    
+    font-size: 12.4672px;
+    line-height: 89.4%;    
+    margin-right:6.2px;
+    max-width: 35%;
+    
+  }
+
+  .examplePayBox .rightExamplePayBox 
+  {
+    font-size: 12.4672px;
+    line-height: 89.4%;    
+    margin-left:6.2px;
+    max-width: 35%;
+  }
+  .bottomBlueBar
+  {
+    margin-bottom: -20px;
+  }
+  #bsecure-reminder-modal.bsecure-modal 
+  {
+    max-width: 90%;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
